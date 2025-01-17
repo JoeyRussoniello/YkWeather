@@ -79,4 +79,4 @@ filtered = filter(lambda x: x is not None, processed)
 df = pd.DataFrame(filtered)
 
 #Write to csv
-df.to_csv(OUTPUT_PATH,index = False)
+df.to_csv(OUTPUT_PATH,index = False, header = False, mode = 'a')
